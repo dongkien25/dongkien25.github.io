@@ -180,6 +180,7 @@ html{
 
 .select-input__list {
     position: absolute;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 80%;
@@ -188,6 +189,7 @@ html{
     padding: 8px 16px;
     list-style: none;
     display: none;
+    box-shadow: 0 1px 5px #D3D3D3;
 }
 
 .select-input__list::after {
@@ -211,3 +213,38 @@ html{
 .select-input__link:hover {
     color: var(--primary-color);
 }
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    filter: brightness(120%);
+}
+
+.pagination-item__link {
+    --height : 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}   

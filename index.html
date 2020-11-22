@@ -144,6 +144,17 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <div class="header__mobile-wrap-btn">
+                        <label for="nav-mobile-input" class="nav__bar-mobile-btn">
+                            <i class="nav__bar-mobile-btn-icon fas fa-bars"></i>
+                        </label>
+    
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+                           
+                    </div>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 502 502">
@@ -219,6 +230,31 @@
                             </svg>
                         </a>
                     </div>
+                    <input type="checkbox" hidden id="nav-mobile-input" class="nav__bar-checkbox">
+
+                    <label for="nav-mobile-input" class="header__nav-mobile-overlay"></label>
+
+                    <nav class="header__nav-mobile">
+                        <ul class="header__nav-mobile-list">
+                            <li class="header__nav-mobile-item">
+                                <a href="#" class="header__nav-mobile-link">Trang chủ</a>
+                            </li>
+                            <li class="header__nav-mobile-item">
+                                <a href="#" class="header__nav-mobile-link">Dịch vụ</a>
+                            </li>
+                            <li class="header__nav-mobile-item">
+                                <a href="#" class="header__nav-mobile-link">Liên hệ</a>
+                            </li>
+                            <li class="header__nav-mobile-item">
+                                <a href="#" class="header__nav-mobile-link">Trợ giúp</a>
+                            </li>
+                            <li class="header__nav-mobile-item">
+                                <a href="#" class="header__nav-mobile-link">Đăng xuất</a>
+                            </li>
+                        </ul>   
+                    </nav> 
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
 
                     <div class="header__search">
                         <div class="header__search-input-wrap">

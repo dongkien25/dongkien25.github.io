@@ -32,12 +32,21 @@
     .header__cart-list-item {
         max-height: 40vh;
     }
+
+    .mobile-category {
+        display: block;
+    }    
+
     .header__sort-bar {
         display: flex;
     }
 
     .app__container {
         margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+
+    .app__content {
+        padding-top: 8px;
     }
 
  }
@@ -67,6 +76,11 @@
     .header__cart,
     .header__logo {
         width: unset;
+    }
+
+    .header__logo-img {
+        width: 140px;
+        height: 60px;
     }
 
     .header__mobile-wrap-btn {

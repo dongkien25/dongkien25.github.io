@@ -1117,20 +1117,27 @@
 
 .mobile-category__link {
     --line-height: 2rem;
-    display: block;
+    /* display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    overflow: hidden; */
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
     font-weight: 300;
     line-height: var(--line-height);
-    text-align: center;
     width: 108px;
     height: calc(var(--line-height) * 2);
     border-radius: 4px;
     padding: 0 4px;
+    display: flex;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -1244,7 +1251,6 @@
     margin: 10px 10px 6px;
     height: 3.6rem;
     display: block;
-    /* make ellipsis only in 1 line*/
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
